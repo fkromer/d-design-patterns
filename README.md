@@ -1,5 +1,7 @@
 # d-design-patterns
-A collection of D design patterns/idioms.
+
+A collection of D design patterns/idioms (inspired by
+[python-patterns](https://github.com/faif/python-patterns))
 
 ## Usage
 
