@@ -1,4 +1,10 @@
 #!/usr/bin/env rdmd
+/+
+dub.json:
+{
+    "name": "facade"
+}
++/
 
 import std.stdio : writeln, writefln;
 

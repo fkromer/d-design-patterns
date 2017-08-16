@@ -1,4 +1,11 @@
 #!/usr/bin/env rdmd
+/+
+dub.json:
+{
+    "name": "strategy"
+}
++/
+
 import std.stdio;
 
 interface Strategy

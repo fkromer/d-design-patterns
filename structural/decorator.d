@@ -1,4 +1,10 @@
 #!/usr/bin/env rdmd
+/+
+dub.json:
+{
+    "name": "decorator"
+}
++/
 
 import std.stdio : writefln;
 
