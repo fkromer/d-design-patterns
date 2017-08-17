@@ -1,35 +1,62 @@
-# d-design-patterns
-
-[![Build Status](https://travis-ci.org/fkromer/d-design-patterns.png)](https://travis-ci.org/fkromer/d-design-patterns)
+d-design-patterns [![Build Status](https://travis-ci.org/fkromer/d-design-patterns.png)](https://travis-ci.org/fkromer/d-design-patterns)
+=================
 
 A collection of D design patterns/idioms (inspired by
 [python-patterns](https://github.com/faif/python-patterns))
 
 ## Usage
 
-Install `dmd` compiler (includes `rdmd` as well) like described on the
-[dlang.org download website](https://dlang.org/download.html) e.g. on Ubuntu:
+Working D compiler is required, check out [download](https://dlang.org/download.html) page on dlang.org.
 
-    curl -fsS https://dlang.org/install.sh | bash -s dmd
+You can run examples with `rdmd` tool, [dub](http://code.dlang.org/download) or build them manually.
 
-Activate the D environment e.g. on Ubuntu:
+### Run with `rdmd`
 
-    source ~/dlang/dmd-2.075.1/activate
+```
+$ rdmd example.d
+```
 
-Run the examples with `rdmd`:
+### Run with `dub`
 
-    cd behavioral
-    ./strategy.d
+dub is a build tool and package manager for the D programming language. Every example in this repository is a single-file dub package.
 
-or
+```
+$ dub example.d
+```
 
-    rdmd strategy.d
+### Build manually
 
-(`dub` only) Install `dub` e.g. on Ubuntu:
+Use one of:
 
-    `sudo apt-get install dub`
+```
+$ dmd example.d # for DMD compiler
+$ gdc example.d # for GDC
+$ ldc2 example.d # for LDC
+```
 
-Run the examples with `dub`:
+This will compile and link `example` program:
 
-    cd behavioral
-    dub strategy.d
+```
+$ ./example
+```
+
+## List of patterns:
+
+### Behavioral patterns
+
+| Pattern | Description |
+|---------|-------------|
+| [Strategy](behavioral/strategy.d) | selectable operations over the same data |
+
+### Behavioral patterns (Idiomatic)
+
+| Pattern | Description |
+|---------|-------------|
+| [Strategy](behavioral_idiomatic/strategy.d) | selectable operations over the same data |
+
+### Structural patterns
+
+| Pattern | Description |
+|---------|-------------|
+| [Decorator](structural/decorator.d) | wrap functionality with other functionality in order to affect outputs |
+| [Facade](structural/facade.d) | use one class as an API to a number of others |
