@@ -17,7 +17,7 @@ struct FirstStrategy {
     static assert(isStrategy!FirstStrategy);
 
     void execute() {
-        writeln("first executes");
+        writeln("First strategy executes");
     }
 }
 
@@ -25,7 +25,7 @@ struct SecondStrategy {
     static assert(isStrategy!SecondStrategy);
 
     void execute() {
-        writeln("second executes");
+        writeln("Second strategy executes differently");
     }
 }
 
