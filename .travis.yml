@@ -11,4 +11,9 @@ os:
   - linux
   - osx
 
+matrix:
+  exclude:
+    - d: gdc
+      os: osx
+
 script: bash ./.travis.sh
