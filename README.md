@@ -1,5 +1,7 @@
 # d-design-patterns
 
+[![Build Status](https://travis-ci.org/fkromer/d-design-patterns.png)](https://travis-ci.org/fkromer/d-design-patterns)
+
 A collection of D design patterns/idioms (inspired by
 [python-patterns](https://github.com/faif/python-patterns))
 
