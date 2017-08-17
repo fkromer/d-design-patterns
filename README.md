@@ -7,21 +7,29 @@ A collection of D design patterns/idioms (inspired by
 
 ## Usage
 
-install DMD compiler (includes rdmd as well) like described on the
+Install `dmd` compiler (includes `rdmd` as well) like described on the
 [dlang.org download website](https://dlang.org/download.html) e.g. on Ubuntu:
 
     curl -fsS https://dlang.org/install.sh | bash -s dmd
 
-activate the D environment e.g. on Ubuntu:
+Activate the D environment e.g. on Ubuntu:
 
     source ~/dlang/dmd-2.075.1/activate
 
-run the examples with...
+Run the examples with `rdmd`:
 
     cd behavioral
     ./strategy.d
 
-or with:
+or
+
+    rdmd strategy.d
+
+(`dub` only) Install `dub` e.g. on Ubuntu:
+
+    `sudo apt-get install dub`
+
+Run the examples with `dub`:
 
     cd behavioral
-    rdmd strategy.d
+    dub strategy.d
