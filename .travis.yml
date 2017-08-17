@@ -1,7 +1,19 @@
+sudo: false
 language: d
 
 # latest dmd, gdc and ldc
 d:
-  -dmd
-  -gdc
-  -ldc
+  - dmd
+  - gdc
+  - ldc
+
+os:
+  - linux
+  - osx
+
+matrix:
+  exclude:
+    - d: gdc
+      os: osx
+
+script: bash ./.travis.sh
