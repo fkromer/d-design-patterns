@@ -46,6 +46,7 @@ $ ./example
 
 | Pattern | Description |
 |---------|-------------|
+| [Command](behavioral/command.d) | bundle a command and arguments to call later |
 | [Strategy](behavioral/strategy.d) | selectable operations over the same data |
 
 ### Behavioral patterns (Idiomatic)
